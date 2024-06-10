@@ -51,7 +51,7 @@ resource "aws_ecs_task_definition" "hello_world" {
 
   container_definitions = jsonencode([{
     name      = "hello-world"
-    image     = "https://hub.docker.com/repository/docker/bhargav99/project"
+    image     = "public.ecr.aws/t6n7q0q1/public-reg:latest"
     essential = true
     portMappings = [{
       containerPort = 3000
